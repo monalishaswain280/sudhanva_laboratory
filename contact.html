@@ -41,7 +41,7 @@
                                 class="material-icons">local_phone</i>9035351113</a></li>
                 </ul><!-- /.topbar-one__contact -->
                 <div class="topbar-one__buttons">
-                    <a href="appointment.html" class="topbar-one__btn">Get Appointment</a>
+                    <a href="contact.html" class="topbar-one__btn">Get in Touch</a>
                 </div><!-- /.topbar-one__buttons -->
             </div><!-- /.container -->
         </section><!-- /.topbar-one -->
@@ -65,17 +65,16 @@
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a href="services.html">Service</a>
-                            </li>
-                            <li>
                                 <a href="about-3.html">About</a>
                             </li>
-
                             <li>
-                                <a href="doctors.html">Doctor</a>
+                                <a href="services.html">Test</a>
                             </li>
+                            <!-- <li>
+                                <a href="doctors.html">Doctor</a>
+                            </li> -->
                             <li>
-                                <a href="#">Gallery</a>
+                                <a href="gallery.html">Gallery</a>
 
                             </li>
                             <li class="current"><a href="contact.html">Contact</a></li>
@@ -100,7 +99,8 @@
                 <div class="row justify-content-between no-gutters">
                     <div class="col-lg-5">
                         <h3 class="contact-one__title">Get in Touch</h3><!-- /.contact-one__title -->
-                        <form action="inc/sendemail.php" class="contact-one__form contact-form-validated">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-one__form contact-form-validated">
+                            <input type="hidden" name="access_key" value="589e0dcb-8114-471c-a741-43e981f3465d">
                             <input type="text" name="name" placeholder="Full Name">
                             <input type="text" name="email" placeholder="Email Address">
                             <textarea placeholder="Your Messege" name="message"></textarea>
