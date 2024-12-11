@@ -84,6 +84,21 @@
                 <!-- /.container -->
             </nav>
         </header><!-- /.header-one -->
+        <style>
+            .main-navigation {
+                display: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .main-navigation.open {
+                display: block;
+            }
+
+            .main-navigation.open .navigation-box {
+                background-color: #0384CE;
+            }
+        </style>
+
         <div class="banner-wrapper">
             <section class="banner-one banner-carousel__one no-dots owl-theme owl-carousel">
                 <div class="banner-one__slide banner-one__slide-one"
@@ -265,11 +280,11 @@
                                     value added activity to beta test.</p><!-- /.service-one__text -->
                             </div><!-- /.service-one__content -->
                         </div><!-- /.service-one__single -->
-                    </div><!-- /.col-lg-4 -->   
+                    </div><!-- /.col-lg-4 -->
                 </div><!-- /.row -->
                 <center>
-                <a href="services.html" class="thm-btn test-one__btn">View All Services</a>
-            </center>
+                    <a href="services.html" class="thm-btn test-one__btn">View All Services</a>
+                </center>
             </div><!-- /.container -->
         </section><!-- /.service-one -->
         <section class="feature-one">
@@ -669,6 +684,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

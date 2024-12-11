@@ -84,6 +84,20 @@
                 <!-- /.container -->
             </nav>
         </header><!-- /.header-one -->
+        <style>
+            .main-navigation {
+                display: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .main-navigation.open {
+                display: block;
+            }
+
+            .main-navigation.open .navigation-box {
+                background-color: #0384CE;
+            }
+        </style>
         <section class="inner-banner" style="background-image: url(images/resources/inner-banner-1-11.jpg);">
             <div class="container">
                 <h2 class="inner-banner__title">Our Departments</h2>
@@ -94,8 +108,8 @@
                 </ul><!-- /.thm-breadcrumb -->
             </div><!-- /.container -->
         </section><!-- /.inner-banner -->
-        
-        
+
+
         <section class="service-two">
             <div class="container">
                 <div class="block-title text-center">
@@ -275,6 +289,7 @@
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

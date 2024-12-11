@@ -84,6 +84,20 @@
                 <!-- /.container -->
             </nav>
         </header><!-- /.header-one -->
+        <style>
+            .main-navigation {
+                display: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .main-navigation.open {
+                display: block;
+            }
+
+            .main-navigation.open .navigation-box {
+                background-color: #0384CE;
+            }
+        </style>
         <section class="inner-banner" style="background-image: url(images/resources/inner-banner-1-2.jpg);">
             <div class="container">
                 <h2 class="inner-banner__title">Contact Informations</h2>
@@ -99,7 +113,8 @@
                 <div class="row justify-content-between no-gutters">
                     <div class="col-lg-5">
                         <h3 class="contact-one__title">Get in Touch</h3><!-- /.contact-one__title -->
-                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-one__form contact-form-validated">
+                        <form action="https://api.web3forms.com/submit" method="POST"
+                            class="contact-one__form contact-form-validated">
                             <input type="hidden" name="access_key" value="589e0dcb-8114-471c-a741-43e981f3465d">
                             <input type="text" name="name" placeholder="Full Name">
                             <input type="text" name="email" placeholder="Email Address">
@@ -113,7 +128,8 @@
                                 <i class="clainc-icon-information-button"></i>
                             </div><!-- /.contact-one__icon -->
                             <h3 class="contact-one__info__title">Contact Detail</h3><!-- /.contact-one__info__title -->
-                            <p class="contact-one__info__text">VJRW+2CJ, BTR Gardens, <br> AECS Layout - A Block, Hal Layout,<br> Singasandra, Bengaluru, Karnataka 560068
+                            <p class="contact-one__info__text">VJRW+2CJ, BTR Gardens, <br> AECS Layout - A Block, Hal
+                                Layout,<br> Singasandra, Bengaluru, Karnataka 560068
 
                             </p><!-- /.contact-one__info__text -->
                             <p class="contact-one__info__text"><span>Call us:</span> <br> 9035351113</p>
@@ -245,6 +261,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk25E4mNfVIEt3tNl3K1HwNZVruVoFBlA"></script>
     <script src="js/gmaps.js"></script>
     <script src="js/map-helper.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
