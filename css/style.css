@@ -201,14 +201,14 @@ hr.style-one {
 
 .bootstrap-select .btn-light:not(:disabled):not(.disabled).active,
 .bootstrap-select .btn-light:not(:disabled):not(.disabled):active,
-.bootstrap-select .show>.btn-light.dropdown-toggle {
+/* .bootstrap-select .show>.btn-light.dropdown-toggle {
   background-color: transparent !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   outline: none !important;
-}
+} */
 
-.bootstrap-select>.dropdown-toggle {
+/* .bootstrap-select>.dropdown-toggle {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
@@ -216,9 +216,9 @@ hr.style-one {
 .bootstrap-select .dropdown-toggle:focus,
 .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
   outline: none !important;
-}
+} */
 
-.bootstrap-select .dropdown-menu {
+/* .bootstrap-select .dropdown-menu {
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 0;
@@ -255,7 +255,7 @@ hr.style-one {
   background: #0384CE;
   color: #fff;
   cursor: pointer;
-}
+} */
 
 /* .preloader {
   position: fixed;
