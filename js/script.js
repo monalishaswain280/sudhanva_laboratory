@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggler = document.querySelector(".menu-toggler");
-    const mainNavigation = document.querySelector(".main-navigation");
-
-    menuToggler.addEventListener("click", function () {
-        mainNavigation.classList.toggle("open");
+    document.body.addEventListener("click", function (e) {
+        if (e.target.closest(".menu-toggler")) {
+            const mainNavigation = document.querySelector(".main-navigation");
+            mainNavigation.classList.toggle("open");
+        }
     });
 });
