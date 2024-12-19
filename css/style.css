@@ -8939,3 +8939,35 @@ hr.style-one {
   display: none;
   transition: 0.6s;
 }
+
+/* monalisha */
+@media screen and (max-width: 768px) {
+  .logo-box {
+    display: flex;
+    align-items: center; /* Align logo and burger menu vertically */
+    justify-content: space-between; /* Space out logo and burger menu */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .logo-box .navbar-brand .main-logo {
+    width: 60% !important; /* Increase logo size */
+    height: auto !important; /* Maintain aspect ratio */
+  }
+
+  .logo-box .menu-toggler {
+    margin-left: 0; /* Reset margin */
+    margin-top: 0; /* Reset margin to align properly */
+    z-index: 10; /* Ensure burger menu is visible above other elements */
+    font-size: 20px; /* Adjust icon size for better visibility */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-box .navbar-brand .main-logo {
+    width: 70% !important; /* Further increase logo size for very small screens */
+  }
+
+  .logo-box .menu-toggler {
+    font-size: 24px; /* Further increase burger menu icon size */
+  }
+}
