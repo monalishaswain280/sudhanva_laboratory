@@ -8940,25 +8940,31 @@ hr.style-one {
   transition: 0.6s;
 }
 
-/* monalisha */
+/* mona */
+
 @media screen and (max-width: 768px) {
   .logo-box {
     display: flex;
-    align-items: center; /* Align logo and burger menu vertically */
+    align-items: center; /* Vertically align logo and burger menu */
     justify-content: space-between; /* Space out logo and burger menu */
     padding: 10px; /* Add padding for better spacing */
+    width: 100%; /* Ensure it takes full width */
+  }
+
+  .logo-box .navbar-brand {
+    flex-grow: 1; /* Allow logo to grow and take space */
   }
 
   .logo-box .navbar-brand .main-logo {
     width: 60% !important; /* Increase logo size */
     height: auto !important; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure logo doesn't overflow */
   }
 
   .logo-box .menu-toggler {
-    margin-left: 0; /* Reset margin */
-    margin-top: 0; /* Reset margin to align properly */
+    font-size: 20px; /* Adjust burger icon size */
+    margin-left: 10px; /* Slight margin for spacing */
     z-index: 10; /* Ensure burger menu is visible above other elements */
-    font-size: 20px; /* Adjust icon size for better visibility */
   }
 }
 
