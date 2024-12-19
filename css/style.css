@@ -8944,27 +8944,31 @@ hr.style-one {
 
 @media screen and (max-width: 768px) {
   .logo-box {
-    display: flex;
-    align-items: center; /* Vertically align logo and burger menu */
-    justify-content: space-between; /* Space out logo and burger menu */
-    padding: 10px; /* Add padding for better spacing */
-    width: 100%; /* Ensure it takes full width */
+    display: flex !important; /* Ensure flexbox layout */
+    align-items: center !important; /* Vertically align logo and burger menu */
+    justify-content: space-between !important; /* Space out logo (left) and burger menu (right) */
+    padding: 10px !important; /* Add padding for better spacing */
+    width: 100% !important; /* Ensure it takes full width */
   }
 
   .logo-box .navbar-brand {
-    flex-grow: 1; /* Allow logo to grow and take space */
+    flex-grow: 1 !important; /* Allow logo to grow and take space */
+    display: flex !important; /* Use flexbox to control alignment */
+    justify-content: flex-start !important; /* Align logo to the left */
   }
 
   .logo-box .navbar-brand .main-logo {
     width: 60% !important; /* Increase logo size */
     height: auto !important; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure logo doesn't overflow */
+    max-width: 100% !important; /* Ensure logo doesn't overflow */
   }
 
   .logo-box .menu-toggler {
-    font-size: 20px; /* Adjust burger icon size */
-    margin-left: 10px; /* Slight margin for spacing */
-    z-index: 10; /* Ensure burger menu is visible above other elements */
+    font-size: 20px !important; /* Adjust burger icon size */
+    margin-left: 10px !important; /* Slight margin for spacing */
+    margin-top: 10px !important; /* Add margin-top for spacing */
+    z-index: 10 !important; /* Ensure burger menu is visible above other elements */
+    order: 2 !important; /* Ensure burger menu stays on the right */
   }
 }
 
@@ -8974,6 +8978,7 @@ hr.style-one {
   }
 
   .logo-box .menu-toggler {
-    font-size: 24px; /* Further increase burger menu icon size */
+    font-size: 24px !important; /* Further increase burger menu icon size */
+    margin-top: 15px !important; /* Increased top margin for very small screens */
   }
 }
